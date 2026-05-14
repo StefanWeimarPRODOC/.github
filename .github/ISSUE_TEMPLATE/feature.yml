@@ -1,0 +1,41 @@
+name: "Feature / Enhancement"
+description: "Neue Funktionalität oder Verbesserung"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: "Was funktioniert nicht gut genug? Konkrete Daten, Messwerte oder Beobachtungen."
+    validations:
+      required: true
+  - type: textarea
+    id: analyse
+    attributes:
+      label: Analyse
+      description: "Wo im Code liegt die Ursache? Datei:Zeile, relevante Funktionen/Klassen."
+  - type: textarea
+    id: loesung
+    attributes:
+      label: Lösung
+      description: "Konkreter Ansatz — was ändern, wie, in welcher Reihenfolge?"
+  - type: textarea
+    id: dateien
+    attributes:
+      label: Betroffene Dateien
+      description: "Datei + geplante Änderung auflisten."
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: "Wie prüft man, dass es funktioniert? Konkrete Schritte oder Metriken."
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope-Grenzen
+      description: "Was gehört explizit NICHT dazu?"
+  - type: textarea
+    id: claude
+    attributes:
+      label: Claude Code
+      description: "Optional: Plan-Referenz (.claude/plans/[name].md) oder CLAUDE.md-Kontext."

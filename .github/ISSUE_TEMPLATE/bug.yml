@@ -1,0 +1,48 @@
+name: "Bug Report"
+description: "Fehlverhalten melden"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: "Was passiert? Konkret, mit Daten/Logs/Screenshots."
+    validations:
+      required: true
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Erwartetes Verhalten
+      description: "Was sollte stattdessen passieren?"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduktion
+    attributes:
+      label: Reproduktion
+      description: "Schritte zum Reproduzieren."
+  - type: input
+    id: umgebung
+    attributes:
+      label: Umgebung
+      description: "z.B. Docker, macOS, Python 3.12"
+  - type: textarea
+    id: analyse
+    attributes:
+      label: Analyse
+      description: "Wo im Code liegt das Problem? Datei:Zeile, Ursache wenn bekannt."
+  - type: textarea
+    id: evidenz
+    attributes:
+      label: Evidenz
+      description: "Console-Errors, Logs, API-Response, Screenshots."
+  - type: textarea
+    id: loesung
+    attributes:
+      label: Lösung
+      description: "Falls schon klar: konkreter Fix-Ansatz."
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: "Wie wird geprüft dass der Bug behoben ist?"

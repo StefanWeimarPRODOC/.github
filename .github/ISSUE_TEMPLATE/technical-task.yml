@@ -1,0 +1,31 @@
+name: "Technical Task"
+description: "Refactoring, Infrastruktur, Tooling"
+labels: ["dx"]
+body:
+  - type: textarea
+    id: aufgabe
+    attributes:
+      label: Was ist zu tun?
+      description: "Technische Aufgabe beschreiben."
+    validations:
+      required: true
+  - type: textarea
+    id: warum
+    attributes:
+      label: Warum jetzt?
+      description: "Performance, Wartbarkeit, Voraussetzung für Feature X, Tech Debt."
+  - type: textarea
+    id: dateien
+    attributes:
+      label: Betroffene Dateien
+      description: "Datei + geplante Änderung auflisten."
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done
+      description: "Konkrete, abhakbare Kriterien."
+  - type: textarea
+    id: risiken
+    attributes:
+      label: Risiken / Seiteneffekte
+      description: "Was könnte kaputtgehen? Welche anderen Module sind betroffen?"

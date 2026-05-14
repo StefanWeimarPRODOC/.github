@@ -1,0 +1,42 @@
+name: "Documentation"
+description: "README, CLAUDE.md, Inline-Docs, Guides"
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: was
+    attributes:
+      label: Was soll dokumentiert werden?
+      description: "Feature, Modul, Architekturentscheidung, Setup-Anleitung, API-Referenz?"
+    validations:
+      required: true
+  - type: dropdown
+    id: zielgruppe
+    attributes:
+      label: Zielgruppe
+      options:
+        - Ich selbst in 6 Monaten
+        - Kollaborateure
+        - Claude Code
+        - Endnutzer
+    validations:
+      required: true
+  - type: input
+    id: wo
+    attributes:
+      label: Wo?
+      description: "README.md, CLAUDE.md, docs/, Inline-Kommentare?"
+  - type: textarea
+    id: gliederung
+    attributes:
+      label: Gliederung
+      description: "Grobe Struktur der Dokumentation."
+  - type: textarea
+    id: quellen
+    attributes:
+      label: Quellen / Kontext
+      description: "Welche Issues, Chats, Entscheidungen liefern den Input?"
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done
+      description: "Wann ist die Doku fertig?"

@@ -1,0 +1,43 @@
+name: "Upstream-Diff"
+description: "Abweichung vom Upstream-Repository dokumentieren"
+labels: ["upstream-diff"]
+body:
+  - type: textarea
+    id: upstream
+    attributes:
+      label: Upstream-Verhalten
+      description: "Was macht das Original-Repository an dieser Stelle? Version/Commit des Upstreams."
+    validations:
+      required: true
+  - type: textarea
+    id: fork
+    attributes:
+      label: Gewünschtes Verhalten (unser Fork)
+      description: "Was soll bei uns anders sein und warum?"
+    validations:
+      required: true
+  - type: textarea
+    id: dateien
+    attributes:
+      label: Betroffene Dateien
+      description: "Welche Dateien weichen ab oder sollen abweichen?"
+  - type: dropdown
+    id: merge_risiko
+    attributes:
+      label: Merge-Risiko
+      options:
+        - "🟢 Kein Risiko — Upstream fasst diese Datei nicht an"
+        - "🟡 Mittleres Risiko — Datei wird upstream gelegentlich geändert"
+        - "🔴 Hohes Risiko — aktive Upstream-Entwicklung in dieser Datei"
+    validations:
+      required: true
+  - type: textarea
+    id: tracking
+    attributes:
+      label: Upstream-Tracking
+      description: "Letzter geprüfter Upstream-Commit, relevante Upstream-Issues/PRs."
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: "Wie wird geprüft dass der Fork korrekt funktioniert?"
