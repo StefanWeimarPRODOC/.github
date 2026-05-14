@@ -41,3 +41,14 @@ body:
     attributes:
       label: Verification
       description: "Wie wird geprüft dass der Fork korrekt funktioniert?"
+  - type: dropdown
+    id: prioritaet
+    attributes:
+      label: Priorität
+      options:
+        - "🔴 Urgent"
+        - "🟠 High"
+        - "🟡 Medium"
+        - "🟢 Low"
+    validations:
+      required: true

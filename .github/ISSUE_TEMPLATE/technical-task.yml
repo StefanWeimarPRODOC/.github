@@ -29,3 +29,14 @@ body:
     attributes:
       label: Risiken / Seiteneffekte
       description: "Was könnte kaputtgehen? Welche anderen Module sind betroffen?"
+  - type: dropdown
+    id: prioritaet
+    attributes:
+      label: Priorität
+      options:
+        - "🔴 Urgent"
+        - "🟠 High"
+        - "🟡 Medium"
+        - "🟢 Low"
+    validations:
+      required: true

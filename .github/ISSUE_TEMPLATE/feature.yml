@@ -9,6 +9,11 @@ body:
       description: "Was funktioniert nicht gut genug? Konkrete Daten, Messwerte oder Beobachtungen."
     validations:
       required: true
+  - type: input
+    id: quelle
+    attributes:
+      label: Quelle
+      description: "Woher kommt die Anforderung? z.B. Meeting, Kundenfeedback, eigene Idee, Claude Code Session."
   - type: textarea
     id: analyse
     attributes:
@@ -34,6 +39,17 @@ body:
     attributes:
       label: Scope-Grenzen
       description: "Was gehört explizit NICHT dazu?"
+  - type: dropdown
+    id: prioritaet
+    attributes:
+      label: Priorität
+      options:
+        - "🔴 Urgent"
+        - "🟠 High"
+        - "🟡 Medium"
+        - "🟢 Low"
+    validations:
+      required: true
   - type: textarea
     id: claude
     attributes:

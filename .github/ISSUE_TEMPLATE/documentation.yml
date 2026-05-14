@@ -40,3 +40,14 @@ body:
     attributes:
       label: Definition of Done
       description: "Wann ist die Doku fertig?"
+  - type: dropdown
+    id: prioritaet
+    attributes:
+      label: Priorität
+      options:
+        - "🔴 Urgent"
+        - "🟠 High"
+        - "🟡 Medium"
+        - "🟢 Low"
+    validations:
+      required: true

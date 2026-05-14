@@ -25,7 +25,12 @@ body:
     id: umgebung
     attributes:
       label: Umgebung
-      description: "z.B. Docker, macOS, Python 3.12"
+      description: "z.B. Docker, macOS, Python 3.12, Chrome 130"
+  - type: input
+    id: nutzerrolle
+    attributes:
+      label: Nutzerrolle
+      description: "z.B. Admin, Benutzer, Gast, API-Client"
   - type: textarea
     id: analyse
     attributes:
@@ -46,3 +51,14 @@ body:
     attributes:
       label: Verification
       description: "Wie wird geprüft dass der Bug behoben ist?"
+  - type: dropdown
+    id: prioritaet
+    attributes:
+      label: Priorität
+      options:
+        - "🔴 Urgent"
+        - "🟠 High"
+        - "🟡 Medium"
+        - "🟢 Low"
+    validations:
+      required: true
